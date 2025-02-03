@@ -10,7 +10,7 @@ import { Metadata } from "@/app/actions/createCheckOutSession";
 export async function POST(req: NextRequest) {
     const body = await req.text();
     const headersList = await headers();
-    const sig = headersList.get("stripe-signature");
+    const sig = headersList.get("stripe-signature") as string; //added 'as string'
 
     if (!sig) {
         return NextResponse.json({error: "Missing stripe-signature header"}, { status: 400 });
