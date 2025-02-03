@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export const metadata = {
     title: 'Sanity Studio',
     description: 'Database Lies here..',

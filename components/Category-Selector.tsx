@@ -1,5 +1,5 @@
 'use client'
-import { Category, Product } from "@/sanity.types";
+import { Category } from "@/sanity.types";
 
 
 import { useRouter } from 'next/navigation';
